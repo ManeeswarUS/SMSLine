@@ -1,27 +1,101 @@
-# Urlshortener
+# 🔗 SMSLink – URL Shortener
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+SMSLink is a modern and easy-to-use **URL Shortening Web Application** that converts long and complicated URLs into short, clean, and shareable links.
 
-## Development server
+The application provides a simple interface where users can enter a long URL and generate a unique shortened URL instantly. The shortened URLs are stored in **MongoDB**, allowing the backend to retrieve the original URL whenever someone accesses the generated short link.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+SMSLink is built using **Angular, Node.js, Express.js, and MongoDB**, making it a complete full-stack web application.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📌 Project Overview
 
-## Build
+Long URLs can be difficult to share, remember, and display, especially on social media, messaging platforms, emails, and other applications.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+SMSLink solves this problem by providing a simple URL shortening service.
 
-## Running unit tests
+### How SMSLink Works
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. User enters a long URL.
+2. Angular sends the URL to the backend.
+3. Express.js receives the request.
+4. A unique short code is generated.
+5. The original URL and short code are stored in MongoDB.
+6. The backend returns the shortened URL.
+7. The user can copy and share the shortened URL.
+8. When someone opens the shortened URL, the backend finds the original URL and redirects the user to it.
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ✨ Features
 
-## Further help
+### 🔗 URL Shortening
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Convert long URLs into short and easy-to-share links with a single click.
+
+### ⚡ Fast URL Generation
+
+Generate shortened URLs instantly without complicated steps.
+
+### 📋 Copy Short URL
+
+Users can easily copy the generated shortened URL using the Copy button.
+
+### 🔄 URL Redirection
+
+When a shortened URL is opened, SMSLink automatically redirects the user to the original URL.
+
+### 💾 MongoDB Storage
+
+Original URLs and generated short codes are stored in MongoDB using Mongoose.
+
+### 🎨 Modern User Interface
+
+The frontend provides a clean, responsive, and attractive interface designed for a better user experience.
+
+### 📱 Responsive Design
+
+The interface is designed to work across:
+
+- 💻 Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📟 Tablet
+
+### 🔐 Simple and Reliable
+
+The application uses a backend API and database to manage shortened URLs reliably.
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+
+- **Angular**
+- **TypeScript**
+- **HTML5**
+- **CSS3**
+- **Angular Forms**
+- **RxJS**
+- **Canvas Confetti**
+
+## Backend
+
+- **Node.js**
+- **Express.js**
+- **Mongoose**
+- **CORS**
+- **dotenv**
+
+## Database
+
+- **MongoDB**
+
+## Development Tools
+
+- **Visual Studio Code**
+- **MongoDB Compass**
+- **Node Package Manager (npm)**
+- **Git**
+- **GitHub**
